@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>James McCarron Website</title>
+        <script src="https://kit.fontawesome.com/afc995c48e.js" crossorigin="anonymous"></script>
+        <link href = "https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel = "stylesheet">
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body>
+
+        <!--Navigation Banner-->
+        <div class = "banner">
+            <a href = "index.html#contact">Contact</a>
+            <a href = "crosswords.html">My Crosswords</a>
+            <a href = "index.html#projects">My Projects</a>
+            <a href = "index.html#experience">Work Experience</a>
+            <a href = "index.html#about">About Me</a>
+            <a href = "index.html">Home</a>
+        </div>
+
+        <!--Introduction-->
+        <section class = "intro">
+            <h1 class = "section__title section__title--intro">
+                Modelling a Black Box System
+            </h1>
+            <p class = "section__subtitle section__subtitle--intro">Control Theory, Linear Time-Invarient Systems, Noise Filters, Bode Plots, MATLAB</p>
+            <img src = "img/BlackBox/model2.jpg" alt = "" class = "intro__img">
+        </section>
+
+        <div class = "portfolio-item-individual">
+            <p>As computational power has made tremendous progress in recent history, control
+                theory has been able to be applied to various applications to model and control black
+                box systems. </p>
+            <p>The goal of this project was the determination of a linear,
+                time-invariant state-space or transfer function that heuristically models a black box
+                system. After proving linearity and time-invariance, an optimal noise filter was determined to reduce noise. 
+                A Proportional-Integral-Derivative (PID) controller was then developed based off of the corresponding Bode plots that were generated.
+                This controller must meet all the performance criteria required.</p>
+            <p>The full paper of this project can be viewed below:
+
+
+            </p>
+            <a href = "BlackBox/BlackBoxSystem.pdf" class = "portfolio__item">
+                <img src = "img/BlackBox/Cover.png" alt = "" class = "blackbox__img">
+                <div class = "portfolio__text">
+                </div>
+            </a>
+        </div>
+
+        <!--Footer-->
+        <footer class = "footer" id = "contact">
+            <!--<a href = "mailto:jpmcarron11@gmail.com" class = "footer__link">
+                <i class="fa-solid fa-envelope"></i></a>-->
+            <h2 class = "footer__title section__title--contact">Contact</h2>
+            <ul class = "social-list">
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "mailto:jpmcarron11@gmail.com">
+                        <i class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://github.com">
+                        <i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href="https://www.linkedin.com/in/james-mccarron-1624aa182/">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://www.spotify.com">
+                        <i class="fa-brands fa-spotify"></i></a>
+                </li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://www.instagram.com">
+                        <i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

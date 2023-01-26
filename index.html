@@ -1,18 +1,118 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>James McCarron</title>
+        <script src="https://kit.fontawesome.com/afc995c48e.js" crossorigin="anonymous"></script>
+        <link href = "https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel = "stylesheet">
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body>
 
-<body>
+        <!--Navigation Banner-->
+        <div class = "banner">
+            <a href = "#contact">Contact</a>
+            <a href = "crosswords.html">My Crosswords</a>
+            <a href = "#projects">My Projects</a>
+            <a href = "#experience">Work Experience</a>
+            <a href = "#about">About Me</a>
+            <a href = "#home">Home</a>
+        </div>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+        <!--Introduction-->
+        <section class = "intro" id = "home">
+            <h1 class = "section__title section__title--intro">
+                Hi, I am <strong>James McCarron</strong>
+            </h1>
+            <p class = "section__subtitle section__subtitle--intro">4th Year Mathematics & Engineering Student</p>
+            <img src = "img/headshot.jpg" alt = "headshot" class = "intro__img">
+        </section>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+        <!--My Services-->
+        <section class = "about-me" id = "about">
+            <h2 class = "section__title section__title--aboutme">About Me</h2>
+            <div class = "aboutme">
+                <div class = "about">
+                    <h3>Engineering Lover!</h3>
+                    <p>I am a Mathematics & Engineering student with a specialization in Computing and Communications at Queen's University. I have taken courses in Object Oriented Programming, Algorithms, Data Science, Data Structures, and Computer Architecture.</p>
+                </div>
+                <div class = "about">
+                    <h3>Music Lover!</h3>
+                    <p>I am very passionate about music! I love listening to, talking about, and playing music. I play bass in a band called Static Point and you can check out our Instagram <a style = "color: #8a9a5b" href = "music.html">here!</a>
+                </div>
+                <div class = "about">
+                    <h3>Crossword Lover!</h3>
+                    <p>I love solving/constructing crossword puzzles!  A huge goal of mine is to get one of my puzzles published in the New York Times. You can check out all the crosswords I have made <a style = "color: #8a9a5b" href = "crosswords.html">here!</a></p>
+                </div>
+            </div>
+            <!--<a href="#experience" class = "btn">My Work</a>-->
+        </section>
 
-</body>
+        <!--Work Experience-->
+        <section class = "work-experience" id = "experience">
+            <h2 class = "section__title section__title--experience">Work Experience</h2>
+            <p class = "section__subtitle section__subtitle--experience">Intel - Post-Silicon Validation Engineer Intern (May 2021 - August 2022)</p>
+            <div class = "work-experience__body">
+                <li> Developed new features of Python-based GUI software for SerDes configuration, debug, and testing.
+                     These features were used by internal teams internationally and led to a successful launch of 
+                     multiple new chip designs</li>
+                <li> Debug and tuning of SerDes IP for multiple major projects</li>
+                <li> Developed test scripting and API's for lab use to validate IP</li>
+            </div>
+        </section>
+
+        <!--My Work-->
+        <section class = "my-projects" id = "projects">
+            <h2 class = "section__title section__title--projects">My Projects</h2>
+            <p class = "section__subtitle section__subtitle--projects">A selection of personal projects that I have done</p>
+            <div class = "portfolio">
+
+                <!--GTA Housing Price vs Income Visualization-->
+                <a href = "GTA-rent-price-prediction.html" class = "portfolio__item">
+                    <img src = "img/bokeh_plot.png" alt = "" class = "portfolio__img">
+                    <div class = "portfolio__text"> 
+                        <h4>GTA Housing Price vs Income Visualization</h4>
+                    </div>
+                </a>
+
+                <!--Digit Recognizer-->
+                <a href = "digit-recognizer-gui.html" class = "portfolio__item">
+                    <img src = "img/DigitRecognizer/7.png" alt = "" class = "portfolio__img">
+                    <div class = "portfolio__text"> 
+                        <h4>Digit Recognizer GUI</h4>
+                    </div>
+                </a>
+
+                <!--Modelling A Black Box System-->
+                <a href = "black-box-model.html" class = "portfolio__item">
+                    <img src = "img/BlackBox/Difference.jpg" alt = "" class = "portfolio__img">
+                    <div class = "portfolio__text">
+                        <h4>Mathematically Modelling a Black Box System</h4>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class = "footer" id = "contact">
+
+            <h2 class = "footer__title section__title--contact">Contact</h2>
+            <ul class = "social-list">
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "mailto:jpmcarron11@gmail.com">
+                        <i class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://github.com/james-mccarron">
+                        <i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href="https://www.linkedin.com/in/james-mccarron-1624aa182/">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
 </html>
