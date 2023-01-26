@@ -157,9 +157,7 @@ h3 { font-size: var(--fs-h3) }
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
-section__title--experience{
-    text-align: center;
-}
+
 /*Header*/
 
 nav {
