@@ -143,6 +143,9 @@ h3 { font-size: var(--fs-h3) }
     margin: 0;
     font-size: var(--fs-h3);
 }
+.work-experience{
+    padding: 1em, 1em;
+}
 
 .section__subtitle--intro,
 .section__subtitle--experience {
@@ -201,6 +204,9 @@ nav {
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+}
+.section__title--experience{
+    text-align: center;
 }
 
 /*About Me*/
