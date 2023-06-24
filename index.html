@@ -1,117 +1,234 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title>James McCarron</title>
-        <script src="https://kit.fontawesome.com/afc995c48e.js" crossorigin="anonymous"></script>
-        <link href = "https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel = "stylesheet">
-        <link rel = "stylesheet" href = "css/style.css">
-    </head>
-    <body>
+<html lang="en">
 
-        <!--Navigation Banner-->
-        <div class = "banner">
-            <a href = "#contact">Contact</a>
-            <a href = "crosswords.html">My Crosswords</a>
-            <a href = "#projects">My Projects</a>
-            <a href = "#experience">Work Experience</a>
-            <a href = "#about">About Me</a>
-            <a href = "#home">Home</a>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords"
+    content="steve jones, steve, jones, stevejones.io, georgia tech, georiga institute of technology, atlanta, boston, umass, umass amherst, university of massachusetts, front-end, web, website, computer science, software, developer, engineer, designer, ux" />
+  <meta name="author" content="James McCarron" />
+  <meta name="description" content="Developer | Designer | Researcher" />
+
+  <title>James McCarron</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style1.css" rel="stylesheet">
+  
+  <!-- BOOTSTRAP STYLE SHEET -->
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <!-- STYLE FOR OPENING IMAGE IN POPUP USING FANCYBOX-->
+  <link href="js/source/jquery.fancybox.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css"
+    href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic'>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-80316791-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">
+          <span class="light">James</span> McCarron
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <!-- <li> -->
+          <!-- <a class="page-scroll" href="#about">About</a> -->
+          <!-- </li> -->
+          <li>
+            <a class="page-scroll" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Intro Header -->
+  <section id="intro" class="intro text-center">
+    <div class="overlay">
+      <div class="intro-content">
+        <h1 class="brand-heading animated fadeInDown delay-05s">James McCarron</h1>
+        <div class="picture hasPulse" id=picture></div>
+        <p class="intro-text animated fadeIn delay-2s">I'm an aspiring ML Engineer, data
+          visualization enthusiast, musician, and crossword lover</p>
+        <div id="resume-button" style="padding-top: 1.5em;">
+          <a class="resume-btn animated fadeIn delay-2p5s" href="img/James McCarron.pdf" target="_blank">Resume</a>
         </div>
+      </div>
+    </div>
+    <div class="scroll-arrow">
+      <a href="#portfolio" class="fa fa-angle-down page-scroll">
+        <!-- <i class="fa fa-angle-down page-scroll"></i> -->
+      </a>
+    </div>
+  </section>
 
-        <!--Introduction-->
-        <section class = "intro" id = "home">
-            <h1 class = "section__title section__title--intro">
-                Hi, I am <strong>James McCarron</strong>
-            </h1>
-            <p class = "section__subtitle section__subtitle--intro">4th Year Mathematics & Engineering Student</p>
-            <img src = "img/headshot.jpg" alt = "headshot" class = "intro__img">
-        </section>
-
-        <!--My Services-->
-        <section class = "about-me" id = "about">
-            <h2 class = "section__title section__title--aboutme">About Me</h2>
-            <div class = "aboutme">
-                <div class = "about">
-                    <h3>Engineering Lover!</h3>
-                    <p>I am a Mathematics & Engineering student with a specialization in Computing and Communications at Queen's University. I have taken courses in Object Oriented Programming, Algorithms, Data Science, Data Structures, and Computer Architecture.</p>
-                </div>
-                <div class = "about">
-                    <h3>Music Lover!</h3>
-                    <p>I am very passionate about music! I love listening to, talking about, and playing music. I play bass in a band called Static Point and you can check out our Instagram <a style = "color: #8a9a5b" href = "https://www.instagram.com/staticpointband/">here!</a>
-                </div>
-                <div class = "about">
-                    <h3>Crossword Lover!</h3>
-                    <p>I love solving/constructing crossword puzzles!  A huge goal of mine is to get one of my puzzles published in the New York Times. You can check out all the crosswords I have made <a style = "color: #8a9a5b" href = "crosswords.html">here!</a></p>
-                </div>
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="portfolio-title">Portfolio</h2>
+          <!-- <h5 class="filter-text">(click tags to filter by type)</h5> -->
+    </div>
+      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+        <div class="content">
+          <h2>Toronto rental housing price visualization</h2>
+          <p>End-to-end machine learning project applied to real-world business problem. This project is trying to depict rental situation in Toronto and find out what affects the current prices. Focus is on exploratory data analysis, feature engineering and hyper parameter tuning. </p>
+          <div id="portfolio-button">
+            <a class="portfolio-btn animated" href="https://github.com/james-mccarron/GTA_Rental_Prices" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="image" >
+          <img src="img/GTA_map.png" alt="" />
+        </div>
+      </section>  
+      <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+        <div class="content">
+          <h2>Music Genre Classification and Lyric Generation</h2>
+          <p>Implementation of a convolutional neural network to detect a music genre using Librosa to analyze the spectrogram of the audio input. The genres are able to be predicted with 63% accuracy and lyrics can be generated with 74% accuracy. </p>
+          <div id="portfolio-button">
+            <a class="portfolio-btn animated" href="https://github.com/QMIND-Team/Lyric-Gen" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="img/Screen Shot 2023-05-09 at 2.12.48 PM.png" alt="" />
+        </div>
+      </section>
+      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+        <div class="content">
+          <h2>Uber Data Analysis</h2>
+          <p>Applied cutting-edge tools like GCP Storage, Mage Data Pipeline Tool, BigQuery, and Power BI to analyze Uber data, showcasing expertise in handling large-scale datasets and driving data-driven decision-making.</p>
+          <div id="portfolio-button">
+            <a class="portfolio-btn animated" href="https://github.com/james-mccarron/Uber_DE" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="image" >
+          <img src="img/uber.png" alt="" />
+        </div>
+      </section>  
+      <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+        <div class="content">
+          <h2>Digit Recognizer</h2>
+          <p>Implementation of computer vision fundamentals to creating a machine learning model that classifies a digit drawn on a GUI. </p>
+          <div id="portfolio-button">
+            <a class="portfolio-btn animated" href="https://github.com/james-mccarron/Digit_Recognizer_GUI" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="img/7.png" alt="" />
+        </div>
+      </section>
+  </section> 
+  <!-- Footer -->
+  <section id="contact">
+    <footer>
+      <div class="copyright">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <h2>Contact</h2>
+              <p>Shoot me an email or check out my online profiles</p>
+              <p><a href="mailto:jpmccarron11@gmail.com">jpmccarron11@gmail.com</a></p>
             </div>
-        </section>
-
-        <!--Work Experience-->
-        <section class = "work-experience" id = "experience">
-            <h2 class = "section__title section__title--experience">Work Experience</h2>
-            <p class = "section__subtitle section__subtitle--experience">Intel - Post-Silicon Validation Engineer Intern (May 2021 - August 2022)</p>
-            <div class = "work-experience__body">
-                <li> Developed new features of Python-based GUI software for SerDes configuration, debug, and testing.
-                     These features were used by internal teams internationally and led to a successful launch of 
-                     multiple new chip designs</li>
-                <li> Developed test scripting and API's for internal teams and lab equipment to validate IP of test chips</li>
-                <li> Debug and tuning of SerDes IP for multiple major projects</li>
+            <div class="col-md-12 text-center">
+              <!-- <h3>Other places you can find me</h3> -->
+              <ul class="list-inline banner-social-buttons animated fadeIn">
+                <!-- GitHub Button -->
+                <li><a id="github" href="https://github.com/james-mccarron" target="_blank"><i
+                      class="fa fa-github"></i></a></li>
+                <!-- LinkedIn Button -->
+                <li><a id="linkedin" href="https://www.linkedin.com/in/james-mccarron-1624aa182/" target="_blank"><i
+                      class="fa fa-linkedin"></i></a></li>
+                <!-- Instagram Button -->
+                <li><a id="instagram" href="https://www.instagram.com/james.mccarron/" target="_blank"><i
+                      class="fa fa-instagram"></i></a></li>
+              </ul>
             </div>
-        </section>
+          </div>
+          <div class="copyright-text">
+            <p>Website by James McCarron: <a
+                href="https://github.com/james-mccarron/james-mccarron.github.io" target="_blank">View it on Github</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
 
-        <!--My Work-->
-        <section class = "my-projects" id = "projects">
-            <h2 class = "section__title section__title--projects">My Projects</h2>
-            <p class = "section__subtitle section__subtitle--projects">A selection of personal projects that I have done</p>
-            <div class = "portfolio">
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
 
-                <!--GTA Housing Price vs Income Visualization-->
-                <a href = "GTA-rent-price-prediction.html" class = "portfolio__item">
-                    <img src = "img/bokeh_plot.png" alt = "" class = "portfolio__img">
-                    <div class = "portfolio__text"> 
-                        <h4>GTA Housing Price vs Income Visualization</h4>
-                    </div>
-                </a>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
 
-                <!--Digit Recognizer-->
-                <a href = "digit-recognizer-gui.html" class = "portfolio__item">
-                    <img src = "img/DigitRecognizer/7.png" alt = "" class = "portfolio__img">
-                    <div class = "portfolio__text"> 
-                        <h4>Digit Recognizer GUI</h4>
-                    </div>
-                </a>
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
 
-                <!--Modelling A Black Box System-->
-                <a href = "black-box-model.html" class = "portfolio__item">
-                    <img src = "img/BlackBox/Difference.jpg" alt = "" class = "portfolio__img">
-                    <div class = "portfolio__text">
-                        <h4>Mathematically Modelling a Black Box System</h4>
-                    </div>
-                </a>
+  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
-            </div>
-        </section>
+  <!-- Custom Theme JavaScript -->
+  <script src="js/theme.js"></script>
 
-        <!--Footer-->
-        <footer class = "footer" id = "contact">
+  <!-- REQUIRED SCRIPTS FILES -->
+  <!-- CORE JQUERY SCRIPTS -->
+  <!-- <script src="js/jquery-1.11.1.js"></script> -->
+  <!--  FANCYBOX PLUGIN -->
+  <script src="js/source/jquery.fancybox.js"></script>
+  <!-- ISOTOPE SCRIPTS -->
+  <script src="js/jquery.isotope.js"></script>
+  <!-- CUSTOM SCRIPTS REQIRED-->
+  <script src="js/portfolio.js"></script>
 
-            <h2 class = "footer__title section__title--contact">Contact</h2>
-            <ul class = "social-list">
-                <li class = "social-list__item">
-                    <a class = "social-list__link" href = "mailto:jpmcarron11@gmail.com">
-                        <i class="fa-solid fa-envelope"></i></a>
-                </li>
-                <li class = "social-list__item">
-                    <a class = "social-list__link" href = "https://github.com/james-mccarron">
-                        <i class="fa-brands fa-github"></i></a>
-                </li>
-                <li class = "social-list__item">
-                    <a class = "social-list__link" href="https://www.linkedin.com/in/james-mccarron-1624aa182/">
-                        <i class="fa-brands fa-linkedin"></i></a>
-                </li>
-            </ul>
-        </footer>
-    </body>
+</body>
+
 </html>
